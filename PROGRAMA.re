@@ -39,7 +39,7 @@ AbrirConsole()
 enquanto (verdadeiro) farei {
 Esperar(1)
 
-se ((Cor("S3") == "Branco") e (Cor("S2") == "Preto") e (Cor("S1") == "Branco"))entao {
+se ((Cor("S3") == "Branco") e (Cor("S2") == "Preto") e (Cor("S1") == "Branco"))entao { #Seguir Reto
 EscreverLinha("Frente")
 Frente(200)
 }
@@ -48,6 +48,14 @@ EscreverLinha("Frente")
 Frente(200)
 }
 
+senao se ((Cor("S2") == "Preto") e (Cor("S1") == "Preto")) entao { #Curvas   
+EscreverLinha("Esquerda")
+Esquerda(50)
+}
+senao se ((Cor("S3") == "Preto") e (Cor("S2") == "Preto")) entao {
+EscreverLinha("Direita")
+Direita(50)
+}
 senao se ((Cor("S3") == "Branco") e (Cor("S1") == "Preto")) entao {
 EscreverLinha("Esquerda")
 Esquerda(50)

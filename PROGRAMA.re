@@ -43,7 +43,7 @@ se ((Cor("S3") == "Branco") e (Cor("S2") == "Preto") e (Cor("S1") == "Branco"))e
 EscreverLinha("Frente")
 Frente(200)
 }
-se ((Cor("S3") == "Branco") e (Cor("S1") == "Branco")) entao {
+senao se ((Cor("S3") == "Branco") e (Cor("S1") == "Branco")) entao {
 EscreverLinha("Frente")
 Frente(200)
 }

@@ -39,10 +39,15 @@ AbrirConsole()
 enquanto (verdadeiro) farei {
 Esperar(1)
 
+se ((Cor("S3") == "Branco") e (Cor("S2") == "Preto") e (Cor("S1") == "Branco"))entao {
+EscreverLinha("Frente")
+Frente(200)
+}
 se ((Cor("S3") == "Branco") e (Cor("S1") == "Branco")) entao {
 EscreverLinha("Frente")
-Frente(100)
+Frente(200)
 }
+
 senao se ((Cor("S3") == "Branco") e (Cor("S1") == "Preto")) entao {
 EscreverLinha("Esquerda")
 Esquerda(50)

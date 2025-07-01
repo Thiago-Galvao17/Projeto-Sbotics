@@ -41,6 +41,18 @@ TravarMotor("L", verdadeiro)
 TravarMotor("R", verdadeiro)
 }
 
+tarefa Girar com numero velocidade {
+TravarMotor("BackL", falso)
+TravarMotor("BackR", falso)
+TravarMotor("L", falso)
+TravarMotor("R", falso)
+
+Motor("BackL", velocidade)
+Motor("BackR", 0-velocidade)
+Motor("L", velocidade)
+Motor("R", 0-velocidade)
+}
+
 inicio
 AbrirConsole()
 enquanto (verdadeiro) farei {

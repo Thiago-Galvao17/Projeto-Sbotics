@@ -34,6 +34,13 @@ Motor("L", 0-velocidade)
 Motor("R", velocidade)
 }
 
+tarefa Parar com numero velocidade = 100 {
+TravarMotor("BackL", verdadeiro)
+TravarMotor("BackR", verdadeiro)
+TravarMotor("L", verdadeiro)
+TravarMotor("R", verdadeiro)
+}
+
 inicio
 AbrirConsole()
 enquanto (verdadeiro) farei {

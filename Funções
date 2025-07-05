@@ -1,0 +1,65 @@
+tarefa Frente com numero velocidade {
+TravarMotor("BackL", falso)
+TravarMotor("BackR", falso)
+TravarMotor("L", falso)
+TravarMotor("R", falso)
+
+Motor("BackL", velocidade)
+Motor("BackR", velocidade)
+Motor("L", velocidade)
+Motor("R", velocidade)
+}
+
+tarefa Direita com numero velocidade {
+TravarMotor("BackL", falso)
+TravarMotor("BackR", falso)
+TravarMotor("L", falso)
+TravarMotor("R", falso)
+
+Motor("BackL", velocidade)
+Motor("BackR", 0-velocidade)
+Motor("L", velocidade)
+Motor("R", 0-velocidade)
+}
+
+tarefa Esquerda com numero velocidade {
+TravarMotor("BackL", falso)
+TravarMotor("BackR", falso)
+TravarMotor("L", falso)
+TravarMotor("R", falso)
+
+Motor("BackL", 0-velocidade)
+Motor("BackR", velocidade)
+Motor("L", 0-velocidade)
+Motor("R", velocidade)
+}
+
+tarefa Parar {
+TravarMotor("BackL", verdadeiro)
+TravarMotor("BackR", verdadeiro)
+TravarMotor("L", verdadeiro)
+TravarMotor("R", verdadeiro)
+}
+
+tarefa Tras com numero velocidade {
+TravarMotor("BackL", falso)
+TravarMotor("BackR", falso)
+TravarMotor("L", falso)
+TravarMotor("R", falso)
+
+Motor("BackL", 0-velocidade)
+Motor("BackR", 0-velocidade)
+Motor("L", 0-velocidade)
+Motor("R", 0-velocidade)
+}
+
+tarefa Haste com numero velocidade {  #Parametro 1 para descer
+TravarMotor("Haste", falso)			      #Parametro 0 - 1.5 para subir
+Motor("Haste", velocidade*100)
+Esperar(1050)
+TravarMotor("Haste", verdadeiro)
+}
+
+inicio
+
+fim

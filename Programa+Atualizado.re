@@ -147,11 +147,11 @@ Frente(200)
 
 senao se ((Cor("SL") == "Preto") ou (Cor("S1") == "Preto")) entao {							#Curvas \/ 
 EscreverLinha("Esquerda")
-Esquerda(50)
+Esquerda(70)
 }
 senao se ((Cor("S3") == "Preto") ou (Cor("SR") == "Preto")) entao { 							# /\ 	 /\
 EscreverLinha("Direita")
-Direita(50)
+Direita(70)
 }
 }
 fim
